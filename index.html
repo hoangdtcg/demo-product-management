@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+
+</head>
+<style>
+    td{
+        border: 1px solid black;
+    }
+
+    form{
+        width: 200px;
+        display: inline-block;
+    }
+
+    input{
+       margin-bottom: 10px;
+    }
+</style>
+<body>
+<form id="add-product">
+    <fieldset>
+        <legend>Add Product</legend>
+        <input type="text" id="add-product-name" placeholder="Product Name">
+        <input type="text" id="add-product-price" placeholder="Product Price">
+        <button type="button" onclick="addProduct()">Add</button>
+    </fieldset>
+</form>
+
+<form id="edit-product">
+    <fieldset>
+        <legend>Edit Product</legend>
+        <input type="text" id="edit-product-name" placeholder="Product Name">
+        <input type="text" id="edit-product-price" placeholder="Product Price">
+        <button type="button" onclick="updateProduct()">Update</button>
+    </fieldset>
+</form>
+<br>
+<table id="list-product" border="1px">
+
+</table>
+<script src="product-management.js"></script>
+</body>
+</html>
